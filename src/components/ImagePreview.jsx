@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ImagePreview() {
 
-    const [currentIndex, setCurrentIndex] = React.useState(0);
+    const [currentIndex, setCurrentIndex] = React.useState(5);
     const images = import.meta.glob('../assets/*.jpg', {eager: true});
     const imageList = Object.values(images).map(image => image.default);
 

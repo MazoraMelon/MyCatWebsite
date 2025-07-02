@@ -19,6 +19,11 @@ function App() {
             </p>
 
 
+
+            <div id="download">
+                <h1 style={{ textAlign: "center" }}>Get the app ️→</h1>
+                <button className="downloadButton" onClick={() => alert(`Todo`)}>Download</button>
+            </div>
         </div>
     );
 }
