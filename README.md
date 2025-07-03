@@ -1,12 +1,11 @@
-# React + Vite
+# Meet `cat-pcha`
+## The new way to **Captcha** (HTML Site)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+> This SHOULD NOT be used to actually verify humanity. This was designed as a joke and to nuisance humans
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Image of example captcha](https://i.ibb.co/qY5qSvQx/Screenshot-2025-07-03-162559.png)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ways this captcha can make life difficult:
+1. It likes cats
