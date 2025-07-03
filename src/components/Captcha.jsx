@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import Checkbox from "./Checkbox.jsx";
+import FullName from "./BasicPuzzle.jsx";
 
 export default function Captcha() {
     // Declare state variable for checked status
     const [isChecked, setIsChecked] = useState(false);
+    const [isChecking, setIsChecking] = useState(false);
 
     // Handle checkbox change event
     const onChange = () => {
-        setIsChecked(prev => !prev); // Toggle the checked state
-        console.log("Checkbox clicked, now:", !isChecked);
+        // setIsChecked(prev => !prev); // Toggle the checked state
+        setIsChecking(true);
     };
 
     return (
@@ -19,14 +21,14 @@ export default function Captcha() {
                     flexDirection: "row",
                     gap: "20px",
                 }}>
-                    <Checkbox checked={isChecked} onChange={onChange} />
+                    <Checkbox checked={isChecked} onChange={onChange} isChecking={isChecking} />
                     <h2 className={"notARobot"}>I am not a robot</h2>
                 </div>
                 <p className={"catIcon"}>😺</p>
             </div>
 
             <div id={"captcha-content"}>
-                <p style={{margin: "0"}}>This is the content</p>
+                <FullName />
             </div>
 
         </div>
