@@ -1,5 +1,4 @@
 import React from "react";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 export default function Checkbox({ checked, onChange, isChecking }) {
@@ -24,11 +23,16 @@ export default function Checkbox({ checked, onChange, isChecking }) {
             onClick={onChange}
         >
             {checked ? "✅" : ""}
-            {isChecking ? <DotLottieReact
-                src="https://lottie.host/42e0ba57-be24-431d-8252-37cfa99bc57a/rNqt5n3aa7.lottie"
-                loop
-                autoplay
-            /> : <></>}
+            {isChecking ?
+                <div className="spinner" style={{
+                    width: "20px",
+                    height: "20px",
+                    border: "3px solid #FFC300",
+                    borderTopColor: "transparent",
+                    borderRadius: "50%",
+                    animation: "spin 1s linear infinite"
+                }}></div>
+             : <></>}
         </div>
     );
 }

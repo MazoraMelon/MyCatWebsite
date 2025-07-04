@@ -8,10 +8,9 @@ function App() {
         <div className="App">
             <Background />
 
-            <h1>The new way to Captcha</h1>
+            <h1>The Latest <i><s style={{ color: "#1f1f1f"}}>Torture</s></i> Captcha Method</h1>
 
-            <Captcha />
-
+            <Captcha forwardLink={"https://www.google.com"} />
 
         </div>
     );
